@@ -16,10 +16,10 @@
       <img src="../../assets/img/menu2.png">
       <div>图文分享</div>
     </div>
-     <div class="img-test">
+     <router-link class="img-test" tag="div" to="/goodslist">
       <img src="../../assets/img/menu3.png">
       <div>商品购买</div>
-    </div>
+     </router-link>
      <div class="img-test">
       <img src="../../assets/img/menu4.png">
       <div>留言反馈</div>

@@ -16,7 +16,7 @@
       <div class="bottom">
           <van-tabbar v-model="active" route>
           <van-tabbar-item icon="home-o" to='/home'>首页</van-tabbar-item>
-          <van-tabbar-item icon="cart-o" badge="20" to='/shopcart'>购物车</van-tabbar-item>
+          <van-tabbar-item icon="cart-o" :badge="this.$store.getters.getCarNumber" to='/shopcart'>购物车</van-tabbar-item>
           <van-tabbar-item icon="friends-o" to='/person'>个人中心</van-tabbar-item>
      </van-tabbar>
       </div>

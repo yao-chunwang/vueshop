@@ -6,6 +6,9 @@ import Shopcat from '@/components/Shopcat/shopcat.vue'
 import Preson from '@/components/Preson/preson.vue'
 import Newlist from '@/components/Newlist/newlist.vue'
 import Newsdetails from '@/components/Newlist/newsdetails.vue'
+import Goodslist from '@/components/Goodslist/goodslist.vue'
+import Goodsdetail from '@/components/Goodslist/goodsdetail.vue'
+
 export default new Router({
     mode: 'history',
     routes: [{
@@ -31,6 +34,14 @@ export default new Router({
         {
             path: '/newsdetails/:id',
             component: Newsdetails,
+        },
+        {
+            path: '/goodslist',
+            component: Goodslist,
+        },
+        {
+            path: '/goodsdetail/:id',
+            component: Goodsdetail,
         },
     ]
 })
