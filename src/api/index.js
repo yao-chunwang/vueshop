@@ -42,6 +42,11 @@ export const getGoodsthumb = async function(id) {
     }
     // 获取商品参数区和价格，标题等数据
 export const getGoodsInfo = async function(id) {
-    var res = await axios.get('/getgoodsinfo/' + id)
+        var res = await axios.get('/getgoodsinfo/' + id)
+        return res.data
+    }
+    //获取购物车数据
+export const getcargoods = async function(ids) {
+    var res = await axios.get('getshopcarlist/' + ids)
     return res.data
 }

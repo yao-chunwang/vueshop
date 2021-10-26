@@ -29,7 +29,7 @@
 <div class="goods">
  <span>商品货号:{{goodsInfo.goods_no}}</span>
  <span>库存情况:{{goodsInfo.stock_quantity}}件</span>
- <span>上架时间:{{goodsInfo.add_time}}</span>
+ <span>上架时间:{{goodsInfo.add_time | dateFormat}}</span>
 </div>
 </div>
 </div>
